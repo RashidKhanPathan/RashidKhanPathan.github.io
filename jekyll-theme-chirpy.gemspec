@@ -3,11 +3,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
   spec.version       = "6.4.2"
-  spec.authors       = ["Cotes Chung"]
-  spec.email         = ["cotes.chung@gmail.com"]
+  spec.authors       = ["RashidKhan Pathan"]
+  spec.email         = ["pathanrashid636@gmail.com"]
 
   spec.summary       = "A minimal, responsive, and feature-rich Jekyll theme for technical writing."
-  spec.homepage      = "https://github.com/cotes2020/jekyll-theme-chirpy"
+  spec.homepage      = "https://github.com/rashidkhanpathan/jekyll-theme-chirpy"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f|
