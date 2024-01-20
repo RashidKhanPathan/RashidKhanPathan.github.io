@@ -15,13 +15,13 @@ Welcome everyone, i have been some doing security research on Windows Kernel Exp
 ## Prerequisites
 
 We need to download and install some important softwares for our exploiting this Vulnerability
-- **[IOBIT Advanced System Care 16](#option-1-using-the-chirpy-starter)**
+- **[IOBIT Advanced System Care 16]**
 - **Virtual Machine VMare/VirtualBox (Windows 10 Installed)**
 - **IDA Disassembler Free/Pro**
 - **Visual Studio Any Version (C++) Installed**
 
 ## Installation
-Once Downloading **[IOBIT Advanced System Care 16](#option-1-using-the-chirpy-starter)** we can simply run installer and install it like we install any software, after installation the `AscRegistryFilter.sys` get's automattically installed in system 
+Once Downloading **[IOBIT Advanced System Care 16]** we can simply run installer and install it like we install any software, after installation the `AscRegistryFilter.sys` get's automattically installed in system 
 
 ### Reverse Engineering The Driver
 
