@@ -1,6 +1,6 @@
 ---
 title: CVE-2022-44939 DLL Hijacking (Windows LPE) in Efs Software Easy Chat Server v3.1
-author: rashidkhanpathan
+author: RashidKhanPathan
 date: 2022-11-25 14:10:00 +0800
 categories: [Windows]
 tags: [writing]
