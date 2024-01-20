@@ -168,6 +168,7 @@ The main exploit function that attempts to obtain a handle to the device driver 
 
 `if (hDevice == INVALID_HANDLE_VALUE) { ... }` This condition checks if the obtained handle is valid. If the handle is INVALID_HANDLE_VALUE, it means that there was an error in obtaining the handle.
 
+<<<<<<< HEAD
 `printf("[+] SuccessFully Obtained Device Driver Handle %p (%x) \n", hDevice)`;
 If the handle is valid, this line prints a success message to the console, indicating that the device driver handle was able to successfully obtained.
 
@@ -178,6 +179,17 @@ C:\Users\Rashid>exploit.exe
 ```
 We Successfully able to get our driver handle with our code, now we gonna find IOCTL's that causing BSOD, for that we have to do some more research so let's dive back in IDA and look for function that has IOCTL Values, here we have found `sub_116C4` function which looks promising, if we see analyze the code we are able to see some values which is non Hexadecimal, so if we Decode them using Hexadecimal by Right Cliking On Value > Hexadecimal, IDA convert those values into `0x8001E020` like this format and this is called IOCTL, there are bunch in this `sub_116C4` function and each IOCTL doing something, but we have only find IOCTL that can cause BSOD, but only BSOD is not only Vulnerability here we can do more dangerous than BSOD, Dangerous like getting Privilege Escalation on System with full control using Arbitrary Write/Read Primitives.
 
+=======
+### Social Contact Options
+
+Social contact options are displayed at the bottom of the sidebar. You can turn on/off the specified contacts in file `_data/contact.yml`{: .filepath }.
+
+### Customizing Stylesheet
+
+If you need to customize the stylesheet, copy the theme's `assets/css/jekyll-theme-chirpy.scss`{: .filepath} to the same path on your Jekyll site, and then add the custom style at the end of it.
+
+Starting with version `6.2.0`, if you want to overwrite the SASS variables defined in `_sass/addon/variables.scss`{: .filepath}, copy the main sass file `_sass/main.scss`{: .filepath} into the `_sass`{: .filepath} directory in your site's source, then create a new file `_sass/variables-hook.scss`{: .filepath} and assign new value.
+>>>>>>> 717659d66ef1f68505417fbc8498b88bdbbb1f09
 
 ```c++
 // Functions That Has IOCTL's Decoded
@@ -451,6 +463,7 @@ LABEL_76:
 
 ```
 
+<<<<<<< HEAD
 These Are Extracted IOCTL's from Our Reverse Engineered Driver
 
 ```cpp
@@ -463,6 +476,9 @@ Address | IOCTL Code | Device | Function | Method | Access
 0x11A9D | 0x8001E040 | <UNKNOWN> 0x8001 | 0x810 | METHOD_BUFFERED 0 | FILE_READ_ACCESS | FILE_WRITE_ACCESS (3)
 ```
 
+=======
+After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
+>>>>>>> 717659d66ef1f68505417fbc8498b88bdbbb1f09
 
 Adding more code our exploit so we can send IOCTL's to Kernel at Ring 0, for that we can use C++ Function called `CreateDeviceA`
 
@@ -526,6 +542,7 @@ CloseHandle(hDevice);
 return 0;
 ```
 
+<<<<<<< HEAD
 - hDevice: A handle to the device. It appears to be defined somewhere else in the code.
 - IOCTL: The IOCTL code defined earlier.
 - (LPVOID)0: This seems to be a pointer to input data (buffer), but in this case, it's set to NULL.
@@ -614,6 +631,9 @@ C:\Users\Rashid>exploit.exe
 [+] Causing BSOD
 ```
 
+=======
+Unless you specified the output path, the generated site files will be placed in folder `_site`{: .filepath} of the project's root directory. Now you should upload those files to the target server.
+>>>>>>> 717659d66ef1f68505417fbc8498b88bdbbb1f09
 
 -------------------------
 ### Summary
