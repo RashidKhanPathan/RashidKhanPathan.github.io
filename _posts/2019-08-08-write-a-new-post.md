@@ -1,6 +1,6 @@
 ---
 title: Exploiting Task Hijacking In Android App To Full Application Takeover
-author: cotes
+author: rashidkhanpathan
 date: 2019-08-08 14:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [writing]
