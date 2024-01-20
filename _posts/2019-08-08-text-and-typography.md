@@ -1,184 +1,142 @@
 ---
-title: Text and Typography
+title: Make Your Own Dark/Deep Web Empire
 author: cotes
 date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
 pin: true
-math: true
-mermaid: true
-image:
-  path: /commons/devices-mockup.png
-  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
-
-## Headings
-
-<h1 class="mt-5">H1 - heading</h1>
-
-<h2 data-toc-skip>H2 - heading</h2>
-
-<h3 data-toc-skip>H3 - heading</h3>
-
-<h4>H4 - heading</h4>
-
-## Paragraph
-
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt bibendum rutrum. Proin commodo ornare sapien. Vivamus interdum diam sed sapien blandit, sit amet aliquam risus mattis. Nullam arcu turpis, mollis quis laoreet at, placerat id nibh. Suspendisse venenatis eros eros.
-
-## Lists
-
-### Ordered list
-
-1. Firstly
-2. Secondly
-3. Thirdly
-
-### Unordered list
-
-- Chapter
-  + Section
-    * Paragraph
-
-### ToDo list
-
-- [ ] Job
-  + [x] Step 1
-  + [x] Step 2
-  + [ ] Step 3
-
-### Description list
-
-Sun
-: the star around which the earth orbits
-
-Moon
-: the natural satellite of the earth, visible by reflected light from the sun
-
-## Block Quote
-
-> This line shows the _block quote_.
-
-## Prompts
-
-> An example showing the `tip` type prompt.
-{: .prompt-tip }
-
-> An example showing the `info` type prompt.
-{: .prompt-info }
-
-> An example showing the `warning` type prompt.
-{: .prompt-warning }
-
-> An example showing the `danger` type prompt.
+> Warning: This writeup does not promote or encourage any illegal activity or harm to anyone, this write is only for Educational and Research Purposes
 {: .prompt-danger }
 
-## Tables
 
-| Company                      | Contact          | Country |
-|:-----------------------------|:-----------------|--------:|
-| Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+Dark/Deep Web is the place where all badest things happens i would not mention anything here also there are some places on dark web where you can learn so many fasinating things you will be able to find Scintific Research, Classified Documents, Free EBooks, Advanced Hacking WriteUps and other illegel things
 
-## Links
+in this post i will share how we can create a Dark/Deep Web page and host it from our local server you can also buy a Hosting Provider but i gonna use a mine old laptop as a Server which the laptop has enogh space and ram to run this server with faster internet, so let's get started with technical stuff
 
-<http://127.0.0.1:4000>
+Specifications of My Old Laptop:
+- Intel i5-7200 Processor
+- 20 Gigs Ram 
+- 500 Gigs SSD
+- 2 Gigs MX130 GPU
+- Ubuntu 22.04 Os
 
-## Footnote
+## Prerequisits:
+- Linux Os (Ubuntu 22.04) or any
+- Tor Service & Tor Broswer Installed
+- Python 3 Installed
+- VSCode or any Editor/IDE
+- HTML/CSS Knowledge
 
-Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
+## Installation
+first Download and install Python 3 by using `apt get install python-3` or if you're on mac then `brew install python-3` well i am using python http server to run our page locally but you can use anything Node, RubyOnRails, Django, Flask it's upto you
 
-## Inline code
+after python installed we need to download `Tor Service` and `Tor Browser` on our machine, to download it simply type `sudo apt install tor tor-browser`
 
-This is an example of `Inline Code`.
+after both of them installed we gonna write some html code for our page this one also upto you means you can write any code according to your will, i just gonna create simple html with image and heading
 
-## Filepath
+the code should look like this
 
-Here is the `/path/to/the/file.extend`{: .filepath}.
-
-## Code blocks
-
-### Common
-
-```
-This is a common code snippet, without syntax highlight and line number.
-```
-
-### Specific Language
-
-```bash
-if [ $? -ne 0 ]; then
-  echo "The command was not successful.";
-  #do the needful / exit
-fi;
-```
-
-### Specific filename
-
-```sass
-@import
-  "colors/light-typography",
-  "colors/dark-typography";
-```
-{: file='_sass/jekyll-theme-chirpy.scss'}
-
-## Mathematics
-
-The mathematics powered by [**MathJax**](https://www.mathjax.org/):
-
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
-
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-## Mermaid SVG
-
-```mermaid
- gantt
-  title  Adding GANTT diagram functionality to mermaid
-  apple :a, 2017-07-20, 1w
-  banana :crit, b, 2017-07-23, 1d
-  cherry :active, c, after b a, 1d
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Welcome To My Depp/Dark Web Empire</b>
+    <i>You Are Being Hunted By FBI</i>
+</body>
+</html>
 ```
 
-## Images
+Now Open terminal And Type `python -m http.server 8000` and make sure the to start the server where index.html is located
 
-### Default (with caption)
+Now Open brower and type your local ip address like this `127.0.0.1:8000/index.html`
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" }
-_Full screen width and center alignment_
+We Can See That we got what we want
 
-### Left aligned
+```
+Welcome To My Deep/Dark Web Empire
+You Are Now On Depp/Dark Web
+```
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-75 .normal}
 
-### Float to left
+Creating and hosting your own .onion service (a Tor hidden service) using Python involves several steps. It's important to note that this guide will provide a high-level overview, and you should ensure you're using this technology responsibly and legally. Here's a simplified tutorial to help you get started:
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-50 .left}
-Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecenas pharetra, sem sit amet interdum posuere, tellus lacus eleifend magna, ac lobortis felis ipsum id sapien. Proin ornare rutrum metus, ac convallis diam volutpat sit amet. Phasellus volutpat, elit sit amet tincidunt mollis, felis mi scelerisque mauris, ut facilisis leo magna accumsan sapien. In rutrum vehicula nisl eget tempor. Nullam maximus ullamcorper libero non maximus. Integer ultricies velit id convallis varius. Praesent eu nisl eu urna finibus ultrices id nec ex. Mauris ac mattis quam. Fusce aliquam est nec sapien bibendum, vitae malesuada ligula condimentum.
+**Step 1: Install Required Software**
 
-### Float to right
+Before you start, you'll need to have a few things installed:
 
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-50 .right}
-Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecenas pharetra, sem sit amet interdum posuere, tellus lacus eleifend magna, ac lobortis felis ipsum id sapien. Proin ornare rutrum metus, ac convallis diam volutpat sit amet. Phasellus volutpat, elit sit amet tincidunt mollis, felis mi scelerisque mauris, ut facilisis leo magna accumsan sapien. In rutrum vehicula nisl eget tempor. Nullam maximus ullamcorper libero non maximus. Integer ultricies velit id convallis varius. Praesent eu nisl eu urna finibus ultrices id nec ex. Mauris ac mattis quam. Fusce aliquam est nec sapien bibendum, vitae malesuada ligula condimentum.
+- **Python**: You should have Python installed on your server. Python 3 is recommended.
 
-### Dark/Light mode & Shadow
+- **Tor**: Install the Tor service on your server. On Linux, you can use your package manager. For example, on Debian-based systems:
 
-The image below will toggle dark/light mode based on theme preference, notice it has shadows.
+  ```
+  sudo apt-get install tor
+  ```
 
-![light mode only](/posts/20190808/devtools-light.png){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
-![dark mode only](/posts/20190808/devtools-dark.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
+**Step 2: Configure Tor**
 
-## Video
+1. Open the Tor configuration file for editing:
 
-{% include embed/youtube.html id='Balreaj8Yqs' %}
+   ```
+   sudo nano /etc/tor/torrc
+   ```
 
-## Reverse Footnote
+2. Add the following lines to the configuration file:
 
-[^footnote]: The footnote source
-[^fn-nth-2]: The 2nd footnote source
+   ```
+   HiddenServiceDir /var/lib/tor/myonionsite/
+   HiddenServicePort 80 127.0.0.1:80
+   ```
+
+   This will configure your .onion service to listen on port 80 and route requests to your local web server (localhost:80).
+
+3. Save the configuration file and restart Tor:
+
+   ```
+   sudo service tor restart
+   ```
+
+4. After the service restarts, you can find your .onion address in the `/var/lib/tor/myonionsite/hostname` file.
+
+**Step 3: Create a Simple Python Web Server**
+
+You can create a basic Python web server using the `http.server` module. Here's a simple script to serve content:
+
+```python
+import http.server
+import socketserver
+
+PORT = 80
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("Serving at port", PORT)
+    httpd.serve_forever()
+```
+
+Save this script, for example, as `web_server.py`.
+
+**Step 4: Start Your Web Server**
+
+Run your Python web server script:
+
+```
+python web_server.py
+```
+
+This will start a web server that listens on port 80.
+
+**Step 5: Access Your .onion Service**
+
+Visit your .onion address (found in the `hostname` file) using the Tor Browser. You should be able to access the content served by your Python web server.
+
+Remember that this is a very basic setup, and for a production .onion service, you would need to consider security, performance, and the nature of the content you're hosting. Always be aware of legal and ethical considerations when using Tor and hosting .onion services. This tutorial is for educational purposes and should be used responsibly.
+
+
