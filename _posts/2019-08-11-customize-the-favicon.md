@@ -1,6 +1,6 @@
 ---
 title: Arbitrary Memory Mapping x64 To Local Privilege Escalation
-author: cotes
+author: rashidkhanpathan
 date: 2019-08-11 00:34:00 +0800
 categories: [Blogging, Tutorial]
 tags: [favicon]
