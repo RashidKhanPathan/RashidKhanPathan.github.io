@@ -2,7 +2,7 @@
 title: Make Your Own Dark/Deep Web Empire
 author: RashidKhanPathan
 date: 2019-08-08 11:33:00 +0800
-categories: [Blogging, Demo]
+categories: [Blog, WriteUp, Tutorial]
 tags: [typography]
 pin: true
 ---
@@ -96,5 +96,4 @@ This will start a web server that listens on port 80.
 Visit your .onion address (found in the `hostname` file) using the Tor Browser. You should be able to access the content served by your Python web server.
 
 Remember that this is a very basic setup, and for a production .onion service, you would need to consider security, performance, and the nature of the content you're hosting. Always be aware of legal and ethical considerations when using Tor and hosting .onion services. This tutorial is for educational purposes and should be used responsibly.
-
 

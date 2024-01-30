@@ -1,6 +1,6 @@
 <div align="center">
 
-  # Chirpy Jekyll Theme
+  # Offensive Security Research Blogs
 
   A minimal, responsive, and feature-rich Jekyll theme for technical writing.
 

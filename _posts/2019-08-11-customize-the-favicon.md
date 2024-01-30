@@ -6,14 +6,13 @@ categories: [Blogging, Tutorial]
 tags: [favicon]
 ---
 
-
 Welcome everyone, in this post we are going to exploit Arbitrary Memory Mapping and leading this to Local Privilege Escalation to gain NT Authority Shell, the driver we gonna exploit is from ATEasy `HW64.sys` version: 5.0.1.0 this is good real-life target to exploit this Vulnerability also it gonna help you to hunt on other real-life Window Kernel Drivers so let's hunt begin
 
-before procedding further i wanna say thanks to following people who have helped me lot through their blog posts and resources
+before procedding further i wanna say thanks to following people who have helped me lot through their blog posts and resources, this post re-writeup of @xte - vulndev.io 's post by reading his post i was able to write my own exploit and understood nature of vulnerability
 - @VoidSec  - voidsec.com
-- @xte - vulndev.io
-- @parvez anwar 
-- @james forshaw - Google Security Team
+- @xte - from vulndev.io
+- @parvez anwar - from grayhathacker.com
+- @james forshaw - from Google Security Team
 
 ## Reverse Enginnering Driver
 before going to the exploitation part we have to reverse enginner the driver for understanding vulnerability in depth to understand how it actually occur we need to open driver in IDA, i would highly recommend you to read this writeup from [VoidSec](https://voidsec.com/windows-drivers-reverse-engineering-methodology/)
