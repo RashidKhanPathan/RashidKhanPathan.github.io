@@ -1,7 +1,7 @@
 ---
 title: Local Privilege Escalation in Aura Sync / Aura Creator - ArmouryCrate Windows Installer
 author: RashidKhanPathan
-date: 2019-08-08 14:10:00 +0800
+date: 2023-08-11-08 14:10:00 +0800
 categories: [Windows]
 tags: [writing]
 render_with_liquid: false

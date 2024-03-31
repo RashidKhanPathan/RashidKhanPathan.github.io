@@ -1,7 +1,7 @@
 ---
 title: Exploiting IOBIT Advanced SystemCare 16 AscRegistryFilter.sys Windows Kernel Driver (DoS)
 author: RashidKhanPathan
-date: 2019-08-09 20:55:00 +0800
+date: 2023-08-11-09 20:55:00 +0800
 categories: [Windows]
 tags: [exploit writing, windows kernel driver, 0Day,]
 pin: true
