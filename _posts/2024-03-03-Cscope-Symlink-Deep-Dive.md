@@ -235,15 +235,13 @@ int main(int argc, char *argv[]) {
 
 The exploit begins by initializing a structure (`CscopeExploit`) with the target and maximum file creation parameters. It then proceeds to execute the exploit, creating symbolic links in a loop. The names of these links are based on the process id and follow a specific pattern.
 
-## Implications and Responsible Disclosure
-
-While exploring vulnerabilities is crucial for enhancing software security, it's equally important to approach such findings responsibly. Researchers like 0xOffensiveHex play a vital role in discovering and disclosing vulnerabilities, contributing to a safer digital landscape.
-
 ## Conclusion
 
 The Cscope 15.9 Symlink Exploit serves as a reminder of the ongoing efforts to identify and address security issues in widely used software. Developers, security professionals, and the open-source community must collaborate to ensure that vulnerabilities are patched promptly.
 
-Stay tuned for updates on security patches and responsible disclosure practices, as the cybersecurity landscape continues to evolve.
+Stay tuned for updates on security patches and responsible disclosure practices.
+
+
 
 
 
