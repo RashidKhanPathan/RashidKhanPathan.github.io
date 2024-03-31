@@ -86,24 +86,24 @@ When development is complete, create a [Conventional Commit][cc] with Git.
 
 ## Helpful Resources
 
-- [Code of conduct](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CODE_OF_CONDUCT.md)
-- [Security policy](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/SECURITY.md)
+- [Code of conduct](https://github.com/RashidKhanPathan/jekyll-theme-chirpy/blob/master/docs/CODE_OF_CONDUCT.md)
+- [Security policy](https://github.com/RashidKhanPathan/jekyll-theme-chirpy/blob/master/docs/SECURITY.md)
 - [How To Ask Questions The Smart Way][ext-reading]
 
-[latest-ver]: https://github.com/cotes2020/jekyll-theme-chirpy/releases/latest
-[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
-[issues]: https://github.com/cotes2020/jekyll-theme-chirpy/issues?q=is%3Aissue
-[pr]: https://github.com/cotes2020/jekyll-theme-chirpy/pulls
-[discus]: https://github.com/cotes2020/jekyll-theme-chirpy/discussions
+[latest-ver]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/releases/latest
+[wiki]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/wiki
+[issues]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/issues?q=is%3Aissue
+[pr]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/pulls
+[discus]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/discussions
 [ext-reading]: http://www.catb.org/~esr/faqs/smart-questions.html
 [jekyll-talk]: https://talk.jekyllrb.com/
 [stack-overflow]: https://stackoverflow.com/questions/tagged/jekyll
 [rtfm]: https://en.wikipedia.org/wiki/RTFM
 [stfw]: https://www.webster-dictionary.org/definition/STFW
 [gh-reactions]: https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/
-[bug-report]: https://github.com/cotes2020/jekyll-theme-chirpy/issues/new?assignees=&labels=&projects=&template=bug_report.yml
-[feat-request]: https://github.com/cotes2020/jekyll-theme-chirpy/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml
+[bug-report]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/issues/new?assignees=&labels=&projects=&template=bug_report.yml
+[feat-request]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.yml
 [feat-creep]: https://en.wikipedia.org/wiki/Feature_creep
-[dev-env]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki/Development-&-Test-Environments
+[dev-env]: https://github.com/RashidKhanPathan/jekyll-theme-chirpy/wiki/Development-&-Test-Environments
 [cc]: https://www.conventionalcommits.org/
 [gh-pr]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests

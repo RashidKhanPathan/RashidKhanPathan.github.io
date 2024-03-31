@@ -10,7 +10,7 @@ img_path: '/posts/20180809'
 ---
 
 ## Description
-Welcome everyone, i have been some doing security research on Windows Kernel Exploitation and while doing it i have came across `HackSysExtremeVulnerableDriver` an about year ago a Vulnerable Windows Kernel Driver made for `Windows Kernel Driver Exploitation` by `HackSys Team` i immidiately downloaded and setup this driver by following `github.io` step by step tutorial and started to exploiting it, the exploitation is actually complicated but was fun while doing reverse engineering and exploit writing, now for this driver you will find bunch resources online which would teach you How to Reverse Engineer this driver to Exploit Writing, here is the repo for it's resources `github.com`, after understating and learning reverse engineering and exploiting `HEVD` i got enough knowledge for exploting real life windows kernel drivers, so what i have done is, i started to look for some real life windows kernel drivers and found bunch of them in some of the most popular tech-giant's products which almost everyone uses in their daily lives, eg: Anti-Viruses, Gaming Motherboards, GPU's including Nvidia & AMD and other vendors, as well windows it self has bigger attack surface for windows kernel driver exploitation, so without wasting any more time let's start
+Welcome everyone, i have been some doing security research on Windows Kernel Exploitation and while doing it came across `HackSysExtremeVulnerableDriver` an about year ago a Vulnerable Windows Kernel Driver made for `Windows Kernel Driver Exploitation` by `HackSys Team` so immidiately downloaded and setup this driver by following `github.io` step by step tutorial and started to exploiting it, the exploitation is actually complicated but was fun while doing reverse engineering and exploit writing, now for this driver you will find bunch resources online which would teach you How to Reverse Engineer this driver to Exploit Writing, here is the repo for it's resources `github.com`, after understating and learning reverse engineering and exploiting `HEVD` i got enough knowledge for exploting real life windows kernel drivers, so what i have done is, i started to look for some real life windows kernel drivers and found bunch of them in some of the most popular tech-giant's products which almost everyone uses in their daily lives, eg: Anti-Viruses, Gaming Motherboards, GPU's including Nvidia & AMD and other vendors, as well windows it self has bigger attack surface for windows kernel driver exploitation, so without wasting any more time let's start
 
 ## Prerequisites
 
@@ -168,7 +168,6 @@ The main exploit function that attempts to obtain a handle to the device driver 
 
 `if (hDevice == INVALID_HANDLE_VALUE) { ... }` This condition checks if the obtained handle is valid. If the handle is INVALID_HANDLE_VALUE, it means that there was an error in obtaining the handle.
 
-<<<<<<< HEAD
 `printf("[+] SuccessFully Obtained Device Driver Handle %p (%x) \n", hDevice)`;
 If the handle is valid, this line prints a success message to the console, indicating that the device driver handle was able to successfully obtained.
 
@@ -178,18 +177,6 @@ C:\Users\Rashid>exploit.exe
 [+] SuccessFully Obtained Device Driver Handle 0xE5
 ```
 We Successfully able to get our driver handle with our code, now we gonna find IOCTL's that causing BSOD, for that we have to do some more research so let's dive back in IDA and look for function that has IOCTL Values, here we have found `sub_116C4` function which looks promising, if we see analyze the code we are able to see some values which is non Hexadecimal, so if we Decode them using Hexadecimal by Right Cliking On Value > Hexadecimal, IDA convert those values into `0x8001E020` like this format and this is called IOCTL, there are bunch in this `sub_116C4` function and each IOCTL doing something, but we have only find IOCTL that can cause BSOD, but only BSOD is not only Vulnerability here we can do more dangerous than BSOD, Dangerous like getting Privilege Escalation on System with full control using Arbitrary Write/Read Primitives.
-
-=======
-### Social Contact Options
-
-Social contact options are displayed at the bottom of the sidebar. You can turn on/off the specified contacts in file `_data/contact.yml`{: .filepath }.
-
-### Customizing Stylesheet
-
-If you need to customize the stylesheet, copy the theme's `assets/css/jekyll-theme-chirpy.scss`{: .filepath} to the same path on your Jekyll site, and then add the custom style at the end of it.
-
-Starting with version `6.2.0`, if you want to overwrite the SASS variables defined in `_sass/addon/variables.scss`{: .filepath}, copy the main sass file `_sass/main.scss`{: .filepath} into the `_sass`{: .filepath} directory in your site's source, then create a new file `_sass/variables-hook.scss`{: .filepath} and assign new value.
->>>>>>> 717659d66ef1f68505417fbc8498b88bdbbb1f09
 
 ```c++
 // Functions That Has IOCTL's Decoded
@@ -463,7 +450,7 @@ LABEL_76:
 
 ```
 
-<<<<<<< HEAD
+
 These Are Extracted IOCTL's from Our Reverse Engineered Driver
 
 ```cpp
@@ -475,10 +462,6 @@ Address | IOCTL Code | Device | Function | Method | Access
 0x11A91 | 0x8001E024 | <UNKNOWN> 0x8001 | 0x809 | METHOD_BUFFERED 0 | FILE_READ_ACCESS | FILE_WRITE_ACCESS (3)
 0x11A9D | 0x8001E040 | <UNKNOWN> 0x8001 | 0x810 | METHOD_BUFFERED 0 | FILE_READ_ACCESS | FILE_WRITE_ACCESS (3)
 ```
-
-=======
-After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
->>>>>>> 717659d66ef1f68505417fbc8498b88bdbbb1f09
 
 Adding more code our exploit so we can send IOCTL's to Kernel at Ring 0, for that we can use C++ Function called `CreateDeviceA`
 
@@ -542,7 +525,6 @@ CloseHandle(hDevice);
 return 0;
 ```
 
-<<<<<<< HEAD
 - hDevice: A handle to the device. It appears to be defined somewhere else in the code.
 - IOCTL: The IOCTL code defined earlier.
 - (LPVOID)0: This seems to be a pointer to input data (buffer), but in this case, it's set to NULL.
@@ -618,7 +600,8 @@ int main(void)
 };
 ```
 ###### Results: 
-```batch
+
+```cmd
 C:\Users\Rashid>exploit.exe
 [+] Exploit Title: IOBIT Advanced System Care 16.0 DOS Exploit
 [+] Vulnerability Title: CWE-782 - Exposed IOCTL with Insufficient Access Control
@@ -630,12 +613,10 @@ C:\Users\Rashid>exploit.exe
 [+] SuccessFully Obtained Device Driver Handle %p
 [+] Causing BSOD
 ```
-
-=======
-Unless you specified the output path, the generated site files will be placed in folder `_site`{: .filepath} of the project's root directory. Now you should upload those files to the target server.
->>>>>>> 717659d66ef1f68505417fbc8498b88bdbbb1f09
+### Video PoC
 
 -------------------------
+
 ### Summary
 ##### What we have learned so far?
 we have learned about the process of reverse engineering and exploiting a vulnerable Windows kernel driver. The article provides a step-by-step guide on how to exploit the driver to trigger a denial-of-service (DoS) attack
@@ -654,16 +635,18 @@ we have learned about the process of reverse engineering and exploiting a vulner
 
 **Explanation of Exploit Code**: The exploit code is explained step by step. It shows how the code interacts with the driver using the DeviceIoControl function, sends IOCTLs, and triggers the DoS vulnerability.
 
-### Video PoC
-
-
 ### References
 
 [VoidSec](https://voidsec.com)
+
 [Connor McGarr](https://connormcgarr.github.io)
+
 [Windows Kernel Debugging](https://fluidattacks.com/blog/windows-kernel-debugging/)
+
 [BlackHat](https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update.pdf)
+
 [exploiting-the-windows-kernel-ntfs-with-wnf-part-1](https://research.nccgroup.com/2021/07/15/cve-2021-31956-exploiting-the-windows-kernel-ntfs-with-wnf-part-1/)
+
 [HackSysExtremeVulnerableDriver](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 
 ##### Peace

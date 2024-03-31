@@ -2,8 +2,8 @@
 title: Arbitrary Memory Mapping x64 To Local Privilege Escalation
 author: rashidkhanpathan
 date: 2019-08-11 00:34:00 +0800
-categories: [Blogging, Tutorial]
-tags: [favicon]
+categories: [Exploit-Writing, 0Day]
+tags: [exploit writing, Privilege Escalation, LPE]
 ---
 
 Welcome everyone, in this post we are going to exploit Arbitrary Memory Mapping and leading this to Local Privilege Escalation to gain NT Authority Shell, the driver we gonna exploit is from ATEasy `HW64.sys` version: 5.0.1.0 this is good real-life target to exploit this Vulnerability also it gonna help you to hunt on other real-life Window Kernel Drivers so let's hunt begin

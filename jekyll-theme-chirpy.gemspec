@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
   spec.version       = "6.4.2"
-  spec.authors       = ["RashidKhan Pathan"]
+  spec.authors       = ["RashidKhanPathan"]
   spec.email         = ["pathanrashid636@gmail.com"]
 
   spec.summary       = "A minimal, responsive, and feature-rich Jekyll theme for technical writing."
@@ -15,11 +15,11 @@ Gem::Specification.new do |spec|
   }
 
   spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy/issues",
-    "documentation_uri" => "https://github.com/cotes2020/jekyll-theme-chirpy/#readme",
-    "homepage_uri"      => "https://cotes2020.github.io/chirpy-demo",
-    "source_code_uri"   => "https://github.com/cotes2020/jekyll-theme-chirpy",
-    "wiki_uri"          => "https://github.com/cotes2020/jekyll-theme-chirpy/wiki",
+    "bug_tracker_uri"   => "https://github.com/RashidKhanPathan/jekyll-theme-chirpy/issues",
+    "documentation_uri" => "https://github.com/RashidKhanPathan/jekyll-theme-chirpy/#readme",
+    "homepage_uri"      => "https://RashidKhanPathan.github.io/chirpy-demo",
+    "source_code_uri"   => "https://github.com/RashidKhanPathan/jekyll-theme-chirpy",
+    "wiki_uri"          => "https://github.com/RashidKhanPathan/jekyll-theme-chirpy/wiki",
     "plugin_type"       => "theme"
   }
 

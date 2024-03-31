@@ -10,7 +10,7 @@ body:
       options:
         - label: >-
             I have read and accepted the
-            [contributing guidelines](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md).
+            [contributing guidelines](https://github.com/RashidKhanPathan/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md).
           required: true
 
   - type: textarea

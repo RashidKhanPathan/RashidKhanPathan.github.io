@@ -1,11 +1,15 @@
 ---
-title: Make Your Own Dark/Deep Web Empire
+title: Make Your Own Dark/Deep Web Site
 author: RashidKhanPathan
 date: 2019-08-08 11:33:00 +0800
-categories: [Blog, WriteUp, Tutorial]
-tags: [typography]
+categories: [WriteUp, Tutorial]
+tags: [writing, writeup]
 pin: true
+toc: true
 ---
+
+> This writeup is only for Educational Purposes, it is not encourgae or promote any illgel activity, if using this writeup anyone did something wrong then the author will not be held responsible for it even it about just setup
+{: .prompt-danger }
 
 Dark/Deep Web is the place where all badest things happens i would not mention anything here also there are some places on dark web where you can learn so many fasinating things you will be able to find Scintific Research, Classified Documents, Free EBooks, Advanced Hacking WriteUps and other illegel things
 

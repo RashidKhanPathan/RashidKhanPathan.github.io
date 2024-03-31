@@ -1,10 +1,10 @@
 ---
 title: CVE-2022-44939 DLL Hijacking (Windows LPE) in Efs Software Easy Chat Server v3.1
-author: RashidKhanPathan
+author: rashidkhanpathan
 date: 2022-11-25 14:10:00 +0800
 categories: [Windows]
 tags: [writing]
-pin: tru
+pin: true
 render_with_liquid: false
 ---
 
@@ -12,7 +12,7 @@ render_with_liquid: false
 - Product: Dual DHCP DNS Server  
 - Affected version: V7.40  
 - Vendor: Achal Dhir (SourceForge.net)  
-- Fixed version: No response from vendor  n
+- Fixed version: No response from vendor  
 - Tested version: V7.40  
 - CVE Reference: CVE-2022-46470
 
@@ -24,7 +24,7 @@ The folder permissions on the default installation directory `%SYSTEMDRIVE%\Dual
 
 By replacing the binary an attacker can execute code, allowing potential privilege escalation to system.
 
-## 0x04 Workground
+## 0x04 Workaround
 
 It is advised to change the installation directory to `%SYSTEMDRIVE%\Program Files\` or `%SYSTEMDRIVE%\Program Files(x86)\`. By default, these directories allow "Authenticated Users" to only read and execute the directory contents.
 
@@ -39,8 +39,8 @@ https://sourceforge.net/p/dhcp-dns-server/discussion/451062/thread/8b15943892/
 2022-11-27: Vulnerability discovered  
 2022-11-27: Vulnerability reported to vendor via Sourceforge
 2022-11-28: Reported to MITRE for CVE
-2023-02-30: 90-day disclosure deadline passed  
-2023-02-30: Published advisory
+2022-12-30: 90-day disclosure deadline passed  
+2022-12-30: Published advisory
 
 ## 0x07 References
 
