@@ -9,7 +9,8 @@ render_with_liquid: false
 ---
 
 ## 0x01: Details
-- Product: Dual DHCP DNS Server  
+- Product: Dual DHCP DNS Server
+- Author: RashidKhan Pathan  
 - Affected version: V7.40  
 - Vendor: Achal Dhir (SourceForge.net)  
 - Fixed version: No response from vendor  n
